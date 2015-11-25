@@ -56,10 +56,24 @@ html, body, h1, h2, h3, h4, h5, h6 {
 			color: white;
 		}
 		
-		a:hover {
-  			color: pink;
-  			padding: 15px;
-  			background-color: white;
+		.home:hover {
+			background-color: white;
+			color: rgb(239,171,190);
+		}
+
+		.halofarm:hover {
+			background-color: rgb(164,234,164);
+			color: white;
+		}
+
+		.products:hover {
+			background-color: rgb(249,244,189);
+			color: white;
+		}
+
+		.locations:hover {
+			background-color: rgb(137,104,63);
+			color: white;
 		}
 
 		body nav {
@@ -83,5 +97,6 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		     margin-left: 40px;
 		     display:inline-block; /* override */
 		     font-size: 1em; /* override */
+		 	 padding: 20px;
 		   }
 		}
