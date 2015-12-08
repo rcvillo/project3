@@ -214,18 +214,18 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		  	margin:auto;
 		  	position: relative;
 		  	display: inline-block;
-		  	width: 40%;
-		  
+		  	width: 35%;
+		  	padding-left: 10%;
 		  }
 
 		  .column2 {
 		  	float: left;
 		  	margin: auto;
-		  	margin-left: 40px;
+		  	margin-left: 24px;
 		  	width: 282px;
 		  	position: relative;
 		  	display: inline-block;
-		  	width: 40%;
+		  	width: 35%;
 		  }
 
 		  .flavors {
