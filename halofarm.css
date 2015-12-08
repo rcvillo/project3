@@ -15,11 +15,14 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		.title {
 			font-family: 'Lobster', cursive;
 			color: white;
-			font-size: 5em;
-			padding: 20px;
+			padding: 10px;
 			margin-left: 0px;
 			background-color: rgb(216,174,108);
-			padding-left: 40px;
+			font-size: 3.5em;
+			text-decoration: none;
+			position: relative;
+			display: block;
+			text-align: center;
 
 		}
 
@@ -36,10 +39,11 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		nav {
 		  background: rgb(239,171,190);
 		  min-height: 60px;
+		  position: relative;
 		}
 
 
-		a {
+		.home, .halofarm, .products, .locations {
 			text-align: center;
 			display: block;
 			text-decoration: none;
@@ -49,6 +53,13 @@ html, body, h1, h2, h3, h4, h5, h6 {
 			font-size: 1.3em;
 			border-bottom: 1px solid rgba(255,255,255,0.3);
 			color: white;
+		}
+
+		.products a {
+			background: rgb(249,244,189);
+			color: white;
+			display: block;
+			position: relative;
 		}
 
 
@@ -73,53 +84,94 @@ html, body, h1, h2, h3, h4, h5, h6 {
 			color: white;
 		}
 
-		.info {
+		.ice-cream {
 			padding: 25px;
 		}
 
-
+		body nav {
+				color: rgb(239,171,190);
+			}
 
 /* body */
 		body{ 
-
 			margin: 0;
 			font-family: 'Raleway', cursive;
 			font-weight: 700;
 			background-color: white;
+			font-size: 1em;
 		}
 
 		body .info {
 			font-weight: 300;
 			line-height: 23px;
+			font-size: .85em;
+			padding: 30px;
 		}
 
 		body .info h1 {
-			line-height: 55px;
-			font-size: 45px;
+			line-height: 40pxpx;
+			font-size: 1.75empx;
 		}
 
-		/* tablet size */
-		@media (min-width : 481px) {
-  			a {
+/* footer */
+
+	.footer {
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		margin-left: 0px;
+		background-color: rgb(216,174,108);
+		font-size: .5em;
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+
+	.footer a {
+		padding: 10px;
+	}
+
+/* tablet size */
+		@media (min-width : 414px) {
+  			.home, .halofarm, .products, .locations {
      			float: left;
 			    width: 25%;
 			    font-size: 1em;
-			    border: none; /* override */
+			    display: inline-block;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+   			}
+
+   			.title{
+   				font-size: 3.5em;
    			}
 
    			.info {
-   				width: 80%;
+   				width: 60%;
    				padding: 40px;
    				margin: auto;
    			}
+
+			.footer {
+				color: white;
+				padding: 10px;
+				text-decoration: none;
+				margin-left: 0px;
+				background-color: rgb(216,174,108);
+				font-size: .5em;
+				position: relative;
+				display: block;
+				text-align: center;
+				margin-bottom: 0px;
+			}
 
    			body nav {
 				color: rgb(239,171,190);
 			}
 
-		/* desktop size */
-		@media (min-width : 1025px) {
-		  a {
+/* desktop size */
+		@media (min-width : 768px) {
+		  .home, .halofarm, .products, .locations {
 		     float: none;
 		     width: auto; 
 		     margin-left: 40px;
@@ -128,15 +180,39 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		 	 padding: 20px;
 		   }
 
+		  .title {
+		  	font-size: 3.5em;
+		  	padding-left: 55px;
+		  	text-align: left;
+		  }
+
 		  .info{
 		  	-webkit-column-count: 2;
 		  	column-count: 2;
-		  	width: 65%;
+		  	width: 60%;
 		  	margin: auto;
 		  	padding: 40px;
+		  	position: relative;
 		  }
 
 		  .info ul {
-		  	padding-top: 105px;
+		  	padding-top: 38px;
 		  }
+
+		  .footer {
+			color: white;
+			padding: 10px;
+			text-decoration: none;
+			margin-left: 0px;
+			background-color: rgb(216,174,108);			
+			font-size: .5em;
+			display: block;
+			text-align: left;
+			padding-left: 55px;
+			clear: both;
+			position: relative;
+			z-index: 10;
+			height: 7em;
+			margin-top: -3em;
+		}
 		}
