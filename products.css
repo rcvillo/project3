@@ -12,14 +12,18 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		}
 
 /* header */
+
 		.title {
 			font-family: 'Lobster', cursive;
 			color: white;
-			font-size: 5em;
-			padding: 20px;
+			padding: 10px;
 			margin-left: 0px;
 			background-color: rgb(216,174,108);
-			padding-left: 40px;
+			font-size: 3.5em;
+			text-decoration: none;
+			position: relative;
+			display: block;
+			text-align: center;
 
 		}
 
@@ -36,10 +40,11 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		nav {
 		  background: rgb(239,171,190);
 		  min-height: 60px;
+		  position: relative;
 		}
 
 
-		a {
+		.home, .halofarm, .products, .locations {
 			text-align: center;
 			display: block;
 			text-decoration: none;
@@ -85,7 +90,6 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
 /* body */
 		body{ 
-
 			margin: 0;
 			font-family: 'Raleway', cursive;
 			font-weight: 700;
@@ -96,12 +100,36 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		body p {
 			font-weight: 300;
 			line-height: 23px;
+			font-size: .85em;
 		}
 
 		body h1 {
 			line-height: 55px;
-			font-size: 45px;
+			font-size: 2em;
 		}
+
+		.ice-cream {
+			width: 80%;
+			margin: auto;
+		}
+
+/* footer */
+
+	.footer {
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		margin-left: 0px;
+		background-color: rgb(216,174,108);
+		font-size: .5em;
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+
+	.footer a {
+		padding: 10px;
+	}
 
 /* flavors */
 	.flavors ul {
@@ -117,22 +145,28 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
 
 /* tablet size */
-		@media (min-width : 481px) {
-  			a {
+		@media (min-width : 414px) {
+  			.home, .halofarm, .products, .locations {
      			float: left;
 			    width: 25%;
 			    font-size: 1em;
-			    border: none; /* override */
+			    display: inline-block;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+   			}
+
+   			.title{
+   				font-size: 3.5em;
    			}
 
    			.ice-cream {
-   				width: 80%;
+   				width: 60%;
    				padding: 40px;
    				margin: auto;
    			}
 
-   			.flavors ul{
-   				width: 60%;
+   			.flavors {
+   				width: 100%;
 
    			}
 
@@ -140,9 +174,22 @@ html, body, h1, h2, h3, h4, h5, h6 {
    				width: 80%;
    			}
 
+   			.footer {
+				color: white;
+				padding: 10px;
+				text-decoration: none;
+				margin-left: 0px;
+				background-color: rgb(216,174,108);
+				font-size: .5em;
+				position: relative;
+				display: block;
+				text-align: center;
+				margin-bottom: 0px;
+			}
+
 		/* desktop size */
-		@media (min-width : 1025px) {
-		  a {
+		@media (min-width : 768px) {
+		  .home, .halofarm, .products, .locations {
 		     float: none;
 		     width: auto; 
 		     margin-left: 40px;
@@ -151,51 +198,58 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		 	 padding: 20px;
 		   }
 
-		  .ice-cream img{
-		  	width: 85%;
+		  .title {
+		  	font-size: 3.5em;
+		  	padding-left: 55px;
+		  	text-align: left;
 		  }
 
 		  .ice-cream {
-			-webkit-column-count: 2;
-		  	column-count: 2;
-		  	width: 80%;
-		  	height: 80%;
-		  	position: relative;
-		  	overflow: scroll;
 		  	margin: auto;
-		  	padding: 40px;
-		  	position: relative;
-		  }
-
-		  .flavors ul{
-		  	width: 75%;
-		  }
-		}
-
-@media (min-width : 589px) {
-		  a {
-		     float: none;
-		     width: auto; 
-		     margin-left: 40px;
-		     display:inline-block;
-		     font-size: 1em; 
-		 	 padding: 20px;
-		   }
-
-		  .ice-cream img{
-		  	width: 85%;
-		  }
-
-		  .ice-cream {
 		  	width: 80%;
-		  	position: relative;
-		  	overflow: scroll;
-		  	margin: auto;
-		  	padding: 40px;
 		  }
 
-		  .flavors ul{
-		  	width: 75%;
+		  .column1 {
+		  	float: left;
+		  	margin:auto;
+		  	position: relative;
+		  	display: inline-block;
+		  	width: 35%;
+		  	padding-left: 10%;
 		  }
+
+		  .column2 {
+		  	float: left;
+		  	margin: auto;
+		  	margin-left: 24px;
+		  	width: 282px;
+		  	position: relative;
+		  	display: inline-block;
+		  	width: 40%;
+		  }
+
+		  .flavors {
+		  	width: 100%;
+		  }
+
+		.footer {
+			color: white;
+			padding: 10px;
+			text-decoration: none;
+			margin-left: 0px;
+			background-color: rgb(216,174,108);			
+			font-size: .5em;
+			display: block;
+			text-align: left;
+			padding-left: 55px;
+			clear: both;
+			position: relative;
+			z-index: 10;
+			height: 7em;
+			margin-top: -3em;
 		}
+	}
+
+
+
 
