@@ -214,14 +214,14 @@ html, body, h1, h2, h3, h4, h5, h6 {
 		  	margin:auto;
 		  	position: relative;
 		  	display: inline-block;
-		  	width: 35%;
+		  	width: 40%;
 		  	padding-left: 10%;
 		  }
 
 		  .column2 {
 		  	float: left;
 		  	margin: auto;
-		  	margin-left: 24px;
+		  	margin-left: 40px;
 		  	width: 282px;
 		  	position: relative;
 		  	display: inline-block;
